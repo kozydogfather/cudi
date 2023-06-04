@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: #eee;
+    }
+    .rectangle-container {
+      position: relative;
+      padding: 500px 1500px;
+      border: 1px solid #eee;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .background-texture {
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      opacity: 0.2;
+    }
+    .blob-1,
+    .blob-2,
+    .blob-3 {
+      position: absolute;
+      height: 550px;
+      width: 550px;
+      border-radius: 100%;
+      filter: blur(100px);
+    }
+    .blob-1 {
+      background-color: #fff700;
+      transform: translate(50px, -50px) scaleY(1.4);
+    }
+    .blob-2 {
+      background-color: #f00;
+    }
+    .blob-3 {
+      background-color: rgb(200, 58, 222);
+      transform: translate(-50px, 50px) scaleY(1.4);
+    }
+    h1 {
+      position: relative;
+      z-index: 10; /* A higher z-index to ensure it appears above blobs */
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="rectangle-container">
+    <div class="background-texture">
+      <div class="blob-1"></div>
+      <div class="blob-2"></div>
+      <div class="blob-3"></div>
+      <h1>Hello, World!</h1>
+    </div>
+  </div>
+</body>
+</html>
