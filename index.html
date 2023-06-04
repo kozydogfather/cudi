@@ -6,9 +6,45 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>kozylife</title>
   <link rel="stylesheet" href="styles.css">
-  <style>
-    @import url("https://use.typekit.net/zxh8vgr.css");
-  </style>
+    <style>
+      @import url("https://use.typekit.net/zxh8vgr.css");
+    </style>
+    <style>
+        body {
+          background-color: whitesmoke;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100vh;
+          margin: 0;
+        }
+      .heading-container {
+          text-align: center;
+          position: relative;
+          border-radius: 50px;
+          padding: 160px 40px;
+          display: inline-block;
+          overflow: hidden;
+      }
+        .heading-container::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: linear-gradient(180deg, beige, pink); 
+          z-index: -1;
+      }
+      .heading-container h1 {
+          color:white;
+          font-size: 100px;
+          font-family: "area-extended", sans-serif;
+          font-weight: 800;
+          font-style: normal;
+          margin: 0
+      }
+    </style>
 </head>
 <body>
   <div class="heading-container">
